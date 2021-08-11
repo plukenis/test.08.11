@@ -1,4 +1,4 @@
-const data = [
+data = [
     {
         name: 'Jonas',
         marks: [10, 2, 8, 4, 6]
@@ -147,20 +147,20 @@ function find_students_without_mark(data, mark_of_interest) {
 
 summary = summarize_marks(data)
 
-lowest_performing_students, lowest_mark = find_worst_students(summary)
+let lowest_performing_students, lowest_mark = find_worst_students(summary)
 console.log('Lowest mark {lowest_mark} for students {lowest_performing_students}')
 
-best_performing_students, best_mark = find_best_students(summary)
+let best_performing_students, best_mark = find_best_students(summary)
 console.log('Highest mark {best_mark} for students {best_performing_students}')
 
-lowest_performing_students_avg, worst_average = find_worst_student_average(summary)
+let lowest_performing_students_avg, worst_average = find_worst_student_average(summary)
 console.log('Lowest mark average {worst_average} for students {lowest_performing_students_avg}')
 
-best_performing_students_avg, best_average = find_best_student_average(summary)
+let best_performing_students_avg, best_average = find_best_student_average(summary)
 console.log('Highest mark average {best_average} for students {best_performing_students_avg}')
 
-students_with_mark_of_interest, mark_of_interest = find_students_with_mark(data, mark_of_interest=8)
+let students_with_mark_of_interest, mark_of_interest = find_students_with_mark(data, mark_of_interest=8)
 console.log('Students with mark {mark_of_interest}: {students_with_mark_of_interest}')
 
-students_without_mark_of_interest, mark_of_interest = find_students_without_mark(data, mark_of_interest=7)
+let students_without_mark_of_interest, mark_of_interest = find_students_without_mark(data, mark_of_interest=7)
 console.log('Students without mark {mark_of_interest}: {students_without_mark_of_interest}')
